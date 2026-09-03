@@ -756,7 +756,7 @@ MonoBehaviour:
   autoInjectGameObjects:
   - {fileID: 1709366406}
   _player: {fileID: 1709366407}
-  _playerData: {fileID: 11400000, guid: 89cba75b5871b6e4d9c283e56dc72901, type: 2}
+  _uiDocument: {fileID: 2116921562}
 --- !u!1 &725208864
 GameObject:
   m_ObjectHideFlags: 0

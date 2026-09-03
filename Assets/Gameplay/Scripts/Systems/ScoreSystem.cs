@@ -1,16 +1,16 @@
-using VContainer;
+using UnityEngine;
 
 public class ScoreSystem
 {
-    private PlayerData _playerData;
+    private ScorePlayerData _playerData;
 
     private int _score = 0;
 
-    public ScoreSystem(PlayerData data)
+    public ScoreSystem(ScorePlayerData data)
     {
         data.Score = 0;
-
         _playerData = data;
+        AddScore();
     }
 
     public void AddScore()

@@ -1,9 +1,9 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="ScoreRoot" data-source="project://database/Assets/Content/SO/Score.asset?fileID=11400000&amp;guid=89cba75b5871b6e4d9c283e56dc72901&amp;type=2#Score" style="flex-grow: 1;">
+    <ui:VisualElement name="ScoreRoot" data-source="" data-source-type="ScorePlayerData, Assembly-CSharp" data-source-path="Score" style="flex-grow: 1;">
         <ui:VisualElement name="Score" style="align-items: center; width: 200px; height: 50px; align-self: center; background-color: rgba(255, 0, 0, 0.765); top: 35px;">
-            <ui:Label text="0" name="ScoreValue" style="flex-grow: 1; width: 100px; aspect-ratio: auto; -unity-text-align: middle-center;">
+            <ui:Label text="0" name="ScoreValue" data-source-path="Score" data-source-type="ScorePlayerData, Assembly-CSharp" display-tooltip-when-elided="true" style="flex-grow: 1; width: 100px; aspect-ratio: auto; -unity-text-align: middle-center;">
                 <Bindings>
-                    <ui:DataBinding property="text" data-source-path="Score" binding-mode="ToTarget"/>
+                    <ui:DataBinding property="text" data-source-path="Score" binding-mode="ToTarget" data-source-type="ScorePlayerData, Assembly-CSharp" update-trigger="EveryUpdate"/>
                 </Bindings>
             </ui:Label>
         </ui:VisualElement>
