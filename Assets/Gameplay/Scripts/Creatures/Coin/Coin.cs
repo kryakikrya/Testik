@@ -20,10 +20,8 @@ public class Coin : Creature
         _movement.Move(_horizontalSpeed);
     }
 
-    public override void Death()
+    public void AddMoney()
     {
         _score.AddScore();
-
-        base.Death();
     }
 }

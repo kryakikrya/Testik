@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KillBorder
   _layers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
 --- !u!1 &106779111
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KillBorder
   _layers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 128
 --- !u!1 &931448506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 1602866714}
   - component: {fileID: 1602866716}
   - component: {fileID: 1602866715}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3511,7 +3511,7 @@ GameObject:
   - component: {fileID: 1709366407}
   - component: {fileID: 1709366411}
   - component: {fileID: 1709366412}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3680,9 +3680,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1709366406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74ec14fcf9d539242bbe5c453098078e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e54c934148392942bd35af9a02fa167, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OnCollisionKiller
+  m_EditorClassIdentifier: Assembly-CSharp::CoinKiller
   _layers:
     serializedVersion: 2
     m_Bits: 64

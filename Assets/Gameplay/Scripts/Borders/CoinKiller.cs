@@ -1,16 +1,15 @@
 using UnityEngine;
 
-public class OnCollisionKiller : MonoBehaviour
+public class CoinKiller : OnCollisionKiller
 {
-    [SerializeField] protected LayerMask _layers;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if ((_layers.value & (1 << collision.gameObject.layer)) != 0)
         {
-            if (collision.gameObject.TryGetComponent(out Creature creature))
+            if (collision.gameObject.TryGetComponent(out Coin coin))
             {
-                creature.Death();
+                coin.AddMoney();
+                coin.Death();
             }
         }
     }
