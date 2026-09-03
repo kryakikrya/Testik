@@ -1,17 +1,22 @@
-using System;
+using VContainer;
 
 public class ScoreSystem
 {
+    private PlayerData _playerData;
+
     private int _score = 0;
 
-    public Action<int> OnChanged;
+    public ScoreSystem(PlayerData data)
+    {
+        data.Score = 0;
 
-    public int Score => _score;
+        _playerData = data;
+    }
 
     public void AddScore()
     {
         _score++;
 
-        OnChanged?.Invoke(_score);
+        _playerData.Score = _score;
     }
 }

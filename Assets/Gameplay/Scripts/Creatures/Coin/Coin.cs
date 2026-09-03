@@ -23,6 +23,7 @@ public class Coin : Creature
     public override void Death()
     {
         _score.AddScore();
+
         base.Death();
     }
 }

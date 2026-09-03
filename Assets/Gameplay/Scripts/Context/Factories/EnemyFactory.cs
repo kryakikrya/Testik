@@ -1,5 +1,4 @@
 using UnityEngine;
-using VContainer;
 using VContainer.Unity;
 
 public class EnemyFactory : Factory<Enemy>
