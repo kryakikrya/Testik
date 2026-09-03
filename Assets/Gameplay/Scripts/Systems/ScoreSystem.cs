@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class ScoreSystem
 {
     private ScorePlayerData _playerData;
@@ -9,8 +7,8 @@ public class ScoreSystem
     public ScoreSystem(ScorePlayerData data)
     {
         data.Score = 0;
+
         _playerData = data;
-        AddScore();
     }
 
     public void AddScore()
