@@ -13,7 +13,6 @@ public class EnemyFactory : Factory<Enemy>
 
     protected override Enemy CreateTyped(Vector3 position)
     {
-        Debug.Log($"{_prefab} - prefab");
         return _resolver.Instantiate<Enemy>(_prefab, position, Quaternion.identity);
     }
 }

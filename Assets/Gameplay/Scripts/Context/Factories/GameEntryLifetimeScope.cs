@@ -9,6 +9,7 @@ public class GameEntryLifetimeScope : LifetimeScope
     protected override void Configure(IContainerBuilder builder)
     {
         builder.Register<PlayerInput>(Lifetime.Scoped);
+        builder.Register<ScoreSystem>(Lifetime.Scoped);
 
         builder.RegisterInstance(_player);
     }
