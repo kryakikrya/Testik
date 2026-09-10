@@ -8,11 +8,13 @@ public class Coin : Creature
 
     [Inject] private ScoreSystem _score;
 
+    [Inject] private Player _player;
+
     private CoinMovement _movement;
 
     private void Awake()
     {
-        _movement = new CoinMovement(_rb);
+        _movement = new CoinMovement(_rb, _player.transform);
     }
 
     private void FixedUpdate()
